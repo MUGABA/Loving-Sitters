@@ -9,7 +9,7 @@ import { Profile, PetSitter } from '../interface/Profile';
 import { Notifications } from '../interface/Notifications';
 
 interface IAuthContext {
-  profile: PetSitter | Profile | null | undefined | any;
+  profile: PetSitter | Profile | null | undefined;
   loggedInUser: User | null | undefined;
   notifications: Notifications | null | undefined;
   updateLoginContext: (data: AuthApiDataSuccess) => void;
@@ -46,7 +46,6 @@ export const AuthProvider: FunctionComponent = ({ children }): JSX.Element => {
   const [loggedInUser, setLoggedInUser] = useState<User | null | undefined>();
   const [profile, setProfile] = useState<PetSitter | Profile | null | undefined>(profileObj);
   const [notifications, setNotifications] = useState<Notifications | null | undefined>();
-
   const history = useHistory();
 
   const updateLoginContext = useCallback(

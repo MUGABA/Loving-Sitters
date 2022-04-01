@@ -1,5 +1,6 @@
 import { Logout, Person, Settings } from '@mui/icons-material';
 import {
+  Avatar,
   Button,
   Divider,
   Grid,
@@ -117,7 +118,6 @@ const Navbar: React.FC = () => {
   };
 
   const renderMenuItems = () => {
-    // user info display when user login
     return menuItems.map((menu) => {
       if (menu.authenticated) {
         return loggedInUser && <MenuItem key={menu.resource} {...menu} />;
@@ -155,7 +155,10 @@ const Navbar: React.FC = () => {
                     onClick={handleMenuOpen}
                     color="inherit"
                   >
-                    <img style={{ width: 50 }} src={`https://robohash.org/${loggedInUser.email}`} />
+                    <Avatar
+                      style={{ width: 50 }}
+                      src={profile ? profile.photo : `https://robohash.org/${loggedInUser.email}`}
+                    />
                   </IconButton>
                   <Menu
                     id="menu-appbar"
@@ -209,7 +212,10 @@ const Navbar: React.FC = () => {
                     onClick={handleMenuOpen}
                     color="inherit"
                   >
-                    <img style={{ width: 50 }} src={`https://robohash.org/${loggedInUser.email}`} />
+                    <Avatar
+                      style={{ width: 50 }}
+                      src={profile ? profile.photo : `https://robohash.org/${loggedInUser.email}`}
+                    />
                   </IconButton>
                   <Menu
                     id="menu-appbar"

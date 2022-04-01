@@ -2,7 +2,7 @@ import { Typography, Box, Avatar } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
 import useStyles from './useStyles';
 import { createImageFromInitials } from '../../../helpers/makeAnImageFromName';
-import { Bookings } from '../../../interface/manageBooking';
+import { Bookings } from '../../../interface/ManageBooking';
 import ChangeRequestStatus from './ChangeRequestStatus';
 import { useState } from 'react';
 import { convertDate } from '../../../helpers/APICalls/convertDateRightFormat';

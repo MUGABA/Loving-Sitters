@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import { Request } from '../../../interface/manageBooking';
+import { Request } from '../../../interface/ManageBooking';
 import BookingCalendar from '../BookingCalendar/BookingCalendar';
 
 // return a filtered array AND remove filtered values from the original

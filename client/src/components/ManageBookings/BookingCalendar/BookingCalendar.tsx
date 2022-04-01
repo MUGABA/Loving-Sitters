@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import { isSameDay } from 'date-fns';
 import Calendar from 'react-calendar';
 import useStyles from './useStyles';
-import { Request } from '../../../interface/manageBooking';
+import { Request } from '../../../interface/ManageBooking';
 
 export interface Booking {
   startTime: Date;

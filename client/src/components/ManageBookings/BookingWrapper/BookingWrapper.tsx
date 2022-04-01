@@ -3,7 +3,7 @@ import { Box, Typography, Grid } from '@mui/material';
 import CurrentBookingCard from '../CurrentBooking/CurrentBookingCard';
 import BookingCard from '../BookingCard/BookingCard';
 import useStyles from './useStyles';
-import { RequestsList } from '../../../interface/manageBooking';
+import { RequestsList } from '../../../interface/ManageBooking';
 
 const BookingWrapper = ({ requests, cancelled }: RequestsList): JSX.Element => {
   const classes = useStyles();

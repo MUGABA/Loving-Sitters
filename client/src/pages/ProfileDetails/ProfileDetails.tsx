@@ -1,7 +1,6 @@
 import { Grid, Box, Typography, Rating, Divider } from '@mui/material';
 import PageContainer from '../../components/PageContainer/PageContainer';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import RequestForm from './RequestFormSubmit/RequestFormSubmit';
 import useStyles from './useStyles';
 import Avatar from '@mui/material/Avatar';
 import { User } from '../../interface/User';
@@ -84,7 +83,6 @@ const ProfileDetails = (): JSX.Element => {
             ${testProfileDetail.hourlyRate}/hr
           </Typography>
           <Rating sx={{ margin: 'auto' }} value={testProfileDetail.rating} precision={0.5} readOnly />
-          <RequestForm />
         </Grid>
       </Grid>
     </PageContainer>

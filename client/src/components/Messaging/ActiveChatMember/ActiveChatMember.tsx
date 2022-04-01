@@ -2,7 +2,7 @@ import { Typography, Box } from '@mui/material';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 import { useStyles } from './useStyles';
-import { Conversation } from '../../../interface/messages';
+import { Conversation } from '../../../interface/Messages';
 import { createImageFromInitials } from '../../../helpers/makeAnImageFromName';
 
 const ActiveChatMember = ({

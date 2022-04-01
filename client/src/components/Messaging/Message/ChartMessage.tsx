@@ -1,13 +1,13 @@
 import { useAuth } from '../../../context/useAuthContext';
 import { createImageFromInitials } from '../../../helpers/makeAnImageFromName';
-import { TextMessage } from '../../../interface/messages';
+import { TextMessage } from '../../../interface/Messages';
 import { Box, Typography } from '@mui/material';
 import { useStyles } from './useStyles';
 
 const ChatMessage = ({ senderId, message, photo, name }: TextMessage): JSX.Element => {
   const { profile } = useAuth();
   const classes = useStyles();
-  const messageClass = senderId === profile._id ? classes.sent : classes.received;
+  const messageClass = senderId === profile?._id ? classes.sent : classes.received;
 
   let image;
   if (photo.length) image = photo;

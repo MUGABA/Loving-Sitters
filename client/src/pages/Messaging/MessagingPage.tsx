@@ -1,9 +1,9 @@
 import { Box, Grid } from '@mui/material';
 import { useEffect, useState } from 'react';
-import ChatRoom from '../../components/Messaging/ChatSection/ChatRoom';
+import ChatRoom from '../../components/Messaging/ChatSection/ChatRoomMessage';
 import SendersSideWrapper from '../../components/Messaging/SendersWrapper/SendersSideWrapper';
 import { getAllConversations } from '../../helpers/APICalls/messaging';
-import { Conversation } from '../../interface/messages';
+import { Conversation } from '../../interface/Messages';
 
 const conversationObj: Conversation = {
   _id: 'dhfjd',

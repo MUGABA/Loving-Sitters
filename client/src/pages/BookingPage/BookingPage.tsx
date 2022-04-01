@@ -6,7 +6,7 @@ import BookingCalendarWrapper from '../../components/ManageBookings/BookingCalen
 import BookingWrapper from '../../components/ManageBookings/BookingWrapper/BookingWrapper';
 import CurrentBookingCard from '../../components/ManageBookings/CurrentBooking/CurrentBookingCard';
 import { fetchAllRequest } from '../../helpers/APICalls/requests';
-import { Request } from '../../interface/manageBooking';
+import { Request } from '../../interface/ManageBooking';
 import useStyles from './useStyles';
 interface RequestObj {
   accepted: Request[];

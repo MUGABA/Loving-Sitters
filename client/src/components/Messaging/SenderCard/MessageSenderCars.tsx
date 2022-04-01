@@ -1,7 +1,7 @@
 import { Typography, Box } from '@mui/material';
 import { visitNodes } from 'typescript';
 import { createImageFromInitials } from '../../../helpers/makeAnImageFromName';
-import { Conversation } from '../../../interface/messages';
+import { Conversation } from '../../../interface/Messages';
 
 import { useStyles } from './useStyles';
 
